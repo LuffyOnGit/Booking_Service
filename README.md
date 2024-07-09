@@ -76,23 +76,30 @@ This is an example of how to list things you need to use the software and how to
   ```sh
   npm install npm@latest -g
 
-- git clone https://github.com/s0nnygitBooking_Service.git
-- cd Booking_Service
-- npm install
+- git clone
 
-- env
-- Copy code
-- PORT=3002
-- DB_USERNAME=your_db_username
-- DB_PASSWORD=your_db_password
-- DB_NAME=your_db_name
-- DB_HOST=127.0.0.1
+```
+ https://github.com/s0nnygitBooking_Service.git
 
-- Set up the database:
+
+ cd Booking_Service
+ npm install
+
+ env
+ Copy code
+ PORT=3002
+ DB_USERNAME=your_db_username
+ DB_PASSWORD=your_db_password
+ DB_NAME=your_db_name
+ DB_HOST=127.0.0.1
+ ```
+
+ - Set up the database:
 ```
 Ensure MySQL is running.
 Create a database named your_db_name or any name specified in the .env file.
 Run the Sequelize migrations to set up the tables:
-``
+
 Copy code
+```
 npx sequelize db:migrate
